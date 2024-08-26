@@ -1,0 +1,462 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyM1aJM/mMAt27e+fc5Hl9uH",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Faaquino/Exerc-cios/blob/main/Lista%20de%20Exerc%C3%ADcio%202\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Exercício 1"
+      ],
+      "metadata": {
+        "id": "S00RrEpRqveC"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"Filippe\")\n",
+        "print(\"Rio de Janeiro\")"
+      ],
+      "metadata": {
+        "id": "fyUbC8vZqx7Q"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Exercício 2"
+      ],
+      "metadata": {
+        "id": "NaxWH4tQrAYe"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"Olá\")\n",
+        "filme = input(\"Qual o seu filme favorito?:  \")\n",
+        "ano = input(\"Qual o ano de lançamento?  \")\n",
+        "print(\"Seu filme é \", filme , \" do ano de \", ano)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "txu6O_uarCZ_",
+        "outputId": "0ae2b4b0-be92-4cbc-b7a2-76cd913db30b"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Olá\n",
+            "Qual o seu filme favorito?:  Batman\n",
+            "Qual o ano de lançamento?  2012\n",
+            "Seu filme é  Batman  do ano de  2012\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Exercício 3"
+      ],
+      "metadata": {
+        "id": "-CrKrRSixMVf"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "numero1 = float(input(\"Digite numero 1:  \"))\n",
+        "numero2 =  float(input(\"Digite numero 2:  \"))\n",
+        "soma = numero1 + numero2\n",
+        "subtracao = numero1 - numero2\n",
+        "multiplicacao = numero1 * numero2\n",
+        "divisao = numero1 / numero2\n",
+        "\n",
+        "print(\"A soma é: \", soma)\n",
+        "print(\"A subtração é: \", subtracao)\n",
+        "print(\"A multiplicação é: \", multiplicacao)\n",
+        "print(\"A divisão é: \", divisao)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "N6jAKjazxQfZ",
+        "outputId": "a75262dc-02a3-47af-8874-cc593d02b901"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite numero 1:  21\n",
+            "Digite numero 2:  32\n",
+            "A soma é:  53.0\n",
+            "A subtração é:  -11.0\n",
+            "A multiplicação é:  672.0\n",
+            "A divisão é:  0.65625\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Exercício 4"
+      ],
+      "metadata": {
+        "id": "D5wrHG704c6D"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "temperatura = float(input(\"Olá!\" \"\\n\" \"Qual a temperatura atual?: \"))\n",
+        "if temperatura >= 30:\n",
+        "  print(\"Está muito quente,\", temperatura ,\"ºC\", \"tome bastante água\")\n",
+        "elif temperatura <= 15:\n",
+        "    print(\"Esta frio\", temperatura ,\"ºC\", \"não esqueça o casaco\")\n",
+        "else:\n",
+        "    print(\"O clima\", temperatura , \"ºC\", \"está agradável\" )"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Pg8LcIUB4hR4",
+        "outputId": "ca04bda4-ffc5-4ae3-cb58-b51e6664667c"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Olá!\n",
+            "Qual a temperatura atual?: 12\n",
+            "Esta frio 12.0 ºC não esqueça o casaco\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Exercício 5"
+      ],
+      "metadata": {
+        "id": "4uMukgNwTAKE"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for i in range(1,11):\n",
+        "  if i % 2 == 0:\n",
+        "    print(\"Os número pares são:\", i)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "nN_w-qi3TEVU",
+        "outputId": "6611f624-c8e7-45db-ed96-fda50de95497"
+      },
+      "execution_count": 21,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Os número pares são: 2\n",
+            "Os número pares são: 4\n",
+            "Os número pares são: 6\n",
+            "Os número pares são: 8\n",
+            "Os número pares são: 10\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Exercício 6"
+      ],
+      "metadata": {
+        "id": "XLhetHfOXr_i"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "num = []\n",
+        "print(\"Jogo dos Números.\")\n",
+        "while (True):\n",
+        "    pergunta = input(\"Digite um Número: \")\n",
+        "    if pergunta.lower() == \"0\" :\n",
+        "      print(\"Acertou! É o Número 0\")\n",
+        "      break\n",
+        "    try:\n",
+        "        conver = int(pergunta)\n",
+        "        num.append(conver)\n",
+        "    except ValueError:\n",
+        "        print(\"Digite um número válido.\")\n",
+        "\n",
+        "soma = sum(num)\n",
+        "print(f\"A soma dos números é: {soma}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "JhkDa-A4Xv84",
+        "outputId": "a40a66e5-edd6-4772-a81f-0af1d5ee0638"
+      },
+      "execution_count": 65,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Jogo dos Números.\n",
+            "Digite um Número: 2\n",
+            "Digite um Número: 3\n",
+            "Digite um Número: 1\n",
+            "Digite um Número: 6\n",
+            "Digite um Número: 0\n",
+            "Acertou! É o Número 0\n",
+            "A soma dos números é: 12\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Exercício 7"
+      ],
+      "metadata": {
+        "id": "Dmx-RHoXwZt5"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "list = [\"Arroz\", \"Feijão\", \"Macarrão\", \"Queijo\", \"Refrigerante\", \"Biscoito\"]\n",
+        "\n",
+        "print(\"Lista de Compras:\")\n",
+        "for item in list:\n",
+        "  print(item)\n",
+        "\n",
+        "while (True):\n",
+        "  add_itens = input(\"Adicione mais um iten ou Digite (1) para sair:  \")\n",
+        "  if add_itens.lower() == \"1\":\n",
+        "    break\n",
+        "  list.append(add_itens)\n",
+        "\n",
+        "print(\"\\n\"\"------------- // -------------\" \"\\n\" \"Lista de Compra Final:\")\n",
+        "#print(\"Lista de Compra Final:\")\n",
+        "for item in list:\n",
+        "  print(item)\n",
+        "print(\"------------- // -------------\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "SkomuEe2weoS",
+        "outputId": "9386ae5c-8a3d-4355-a291-98ff9acbaa76"
+      },
+      "execution_count": 35,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Lista de Compras:\n",
+            "Arroz\n",
+            "Feijão\n",
+            "Macarrão\n",
+            "Queijo\n",
+            "Refrigerante\n",
+            "Biscoito\n",
+            "Adicione mais um iten ou Digite (1) para sair:  suco \n",
+            "Adicione mais um iten ou Digite (1) para sair:  azeite\n",
+            "Adicione mais um iten ou Digite (1) para sair:  1\n",
+            "\n",
+            "------------- // -------------\n",
+            "Lista de Compra Final:\n",
+            "Arroz\n",
+            "Feijão\n",
+            "Macarrão\n",
+            "Queijo\n",
+            "Refrigerante\n",
+            "Biscoito\n",
+            "suco \n",
+            "azeite\n",
+            "------------- // -------------\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Exercício 8"
+      ],
+      "metadata": {
+        "id": "kCj_yhWBUHtq"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def numero(num):\n",
+        " print(\"O número,\", num+ \" é par\")\n",
+        "numero(\"dois\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "xkN-27qDUMrF",
+        "outputId": "e9c67ff9-4ad1-416f-de2f-d6b606104612"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "O número, dois é par\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Exercício 9"
+      ],
+      "metadata": {
+        "id": "q2X06FEvg2Mo"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "frase = input(\"Escreva uma frase: \")\n",
+        "letra = input(\"Qual letra quer contar?: \")\n",
+        "quantidade = frase.count(letra)\n",
+        "print(f\"A letra '{letra}' o número de vezes que aparece são {quantidade} \")\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "CIdyqtEby53i",
+        "outputId": "1ddf932b-77a6-4d50-ecb2-2da79e56d996"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Escreva uma frase: eu escolhi esperar\n",
+            "Qual letra quer contar?: e\n",
+            "A letra 'e' o número de vezes 4 \n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Exercício 10"
+      ],
+      "metadata": {
+        "id": "K598PJxUEe5E"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def eh_primo(numero):\n",
+        "    if numero <= 1:\n",
+        "        return False\n",
+        "    for i in range(2, int(numero ** 0.5) + 1):\n",
+        "        if numero % i == 0:\n",
+        "            return False\n",
+        "    return True\n",
+        "\n",
+        "print(\"Digite o intervalo de números primos.\")\n",
+        "perg1 = int(input(\"Digite o primeiro número: \"))\n",
+        "perg2 = int(input(\"Digite o último número: \"))\n",
+        "\n",
+        "for numero in range(perg1, perg2):\n",
+        "    if eh_primo(numero):\n",
+        "        print(numero)\n",
+        "\n",
+        "print(primo(7)) # Retorna True, pois 7 é primo"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Mk0hYGICEiFK",
+        "outputId": "cf0ab800-e367-4433-e270-dd05e3cd8d1b"
+      },
+      "execution_count": 17,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite o intervalo de números primos.\n",
+            "Digite o primeiro número: 12\n",
+            "Digite o último número: 22\n",
+            "13\n",
+            "17\n",
+            "19\n",
+            "None\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
