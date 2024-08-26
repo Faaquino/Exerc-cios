@@ -7,6 +7,8 @@ programa {
   }
 }
 
+------------------------------ // ---------------------------------
+
 Exercício(2)
 programa {
   funcao inicio() {
@@ -23,6 +25,9 @@ programa {
   }
 }
 
+
+------------------------------ // ---------------------------------
+
 Exercício(3)
 programa {
   funcao inicio() {
@@ -38,6 +43,9 @@ programa {
     }
   }
 }
+
+
+------------------------------ // ---------------------------------
 
 Exercício(4)
 programa {
@@ -57,6 +65,9 @@ programa {
   }
 }
 
+
+------------------------------ // ---------------------------------
+
 Exercício(5)
 programa {
   funcao inicio() {
@@ -69,6 +80,9 @@ programa {
     escreva("a temperatura em fahrenheit é: ", fahrenheit)
   }
 }
+
+
+------------------------------ // ---------------------------------
 
 Exercício(6)
 programa {
@@ -85,6 +99,9 @@ programa {
   }
 }
 
+
+------------------------------ // ---------------------------------
+
 Exercício(7)
 programa {
   funcao inicio() {
@@ -95,6 +112,9 @@ programa {
     escreva("Contagem regressiva completa")
   }
 }
+
+
+------------------------------ // ---------------------------------
 
 Exercício(8)
 programa 
@@ -131,6 +151,9 @@ programa
   }
 }
 
+
+------------------------------ // ---------------------------------
+
 Exercício(9)
 programa {
   funcao inicio() {
@@ -146,6 +169,9 @@ programa {
     escreva("O fatorial de ", numero, " é: ", fatorial )
   }
 }
+
+
+------------------------------ // ---------------------------------
 
 Exercício(10)
 programa {
