@@ -1,0 +1,129 @@
+Exercício 1
+
+print("Filippe")
+print("Rio de Janeiro")
+
+------------------------------ // ---------------------------------
+
+"""Exercício 2"""
+
+print("Olá")
+filme = input("Qual o seu filme favorito?:  ")
+ano = input("Qual o ano de lançamento?  ")
+print("Seu filme é ", filme , " do ano de ", ano)
+
+------------------------------ // ---------------------------------
+
+"""Exercício 3"""
+
+numero1 = float(input("Digite numero 1:  "))
+numero2 =  float(input("Digite numero 2:  "))
+soma = numero1 + numero2
+subtracao = numero1 - numero2
+multiplicacao = numero1 * numero2
+divisao = numero1 / numero2
+
+print("A soma é: ", soma)
+print("A subtração é: ", subtracao)
+print("A multiplicação é: ", multiplicacao)
+print("A divisão é: ", divisao)
+
+------------------------------ // ---------------------------------
+
+"""Exercício 4"""
+
+temperatura = float(input("Olá!" "\n" "Qual a temperatura atual?: "))
+if temperatura >= 30:
+  print("Está muito quente,", temperatura ,"ºC", "tome bastante água")
+elif temperatura <= 15:
+    print("Esta frio", temperatura ,"ºC", "não esqueça o casaco")
+else:
+    print("O clima", temperatura , "ºC", "está agradável" )
+
+------------------------------ // ---------------------------------
+
+"""Exercício 5"""
+
+for i in range(1,11):
+  if i % 2 == 0:
+    print("Os número pares são:", i)
+
+------------------------------ // ---------------------------------
+
+"""Exercício 6"""
+
+num = []
+print("Jogo dos Números.")
+while (True):
+    pergunta = input("Digite um Número: ")
+    if pergunta.lower() == "0" :
+      print("Acertou! É o Número 0")
+      break
+    try:
+        conver = int(pergunta)
+        num.append(conver)
+    except ValueError:
+        print("Digite um número válido.")
+
+soma = sum(num)
+print(f"A soma dos números é: {soma}")
+
+------------------------------ // ---------------------------------
+
+"""Exercício 7"""
+
+list = ["Arroz", "Feijão", "Macarrão", "Queijo", "Refrigerante", "Biscoito"]
+
+print("Lista de Compras:")
+for item in list:
+  print(item)
+
+while (True):
+  add_itens = input("Adicione mais um iten ou Digite (1) para sair:  ")
+  if add_itens.lower() == "1":
+    break
+  list.append(add_itens)
+
+print("\n""------------- // -------------" "\n" "Lista de Compra Final:")
+#print("Lista de Compra Final:")
+for item in list:
+  print(item)
+print("------------- // -------------")
+
+------------------------------ // ---------------------------------
+
+"""Exercício 8"""
+
+def numero(num):
+ print("O número,", num+ " é par")
+numero("dois")
+
+------------------------------ // ---------------------------------
+
+"""Exercício 9"""
+
+frase = input("Escreva uma frase: ")
+letra = input("Qual letra quer contar?: ")
+quantidade = frase.count(letra)
+print(f"A letra '{letra}' o número de vezes que aparece são {quantidade} ")
+
+------------------------------ // ---------------------------------
+"""Exercício 10"""
+
+def eh_primo(numero):
+    if numero <= 1:
+        return False
+    for i in range(2, int(numero ** 0.5) + 1):
+        if numero % i == 0:
+            return False
+    return True
+
+print("Digite o intervalo de números primos.")
+perg1 = int(input("Digite o primeiro número: "))
+perg2 = int(input("Digite o último número: "))
+
+for numero in range(perg1, perg2):
+    if eh_primo(numero):
+        print(numero)
+
+print(primo(7)) # Retorna True, pois 7 é primo
