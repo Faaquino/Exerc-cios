@@ -1,0 +1,365 @@
+Exercício 1
+
+pergunta = int(input("Digite um número: "))
+fatorial = 1
+
+for numero in range (1, pergunta + 1):
+  fatorial = fatorial * numero
+
+print(f"O fatorial de {pergunta}! é {fatorial}.")
+
+
+
+Exercício 2
+
+temperatura = float(input("Qual a temperatura atual?: "))
+Fahrenheit = (temperatura * 9/5) + 32
+Kelvin =  temperatura + 273.15
+
+print(f"A Temepratura é {temperatura}º Celsius, em Fahrenheit {Fahrenheit}º F e Kelvin {Kelvin}º K ")
+
+
+Exercício 3
+
+peso = float(input("Digite o seu peso:  "))
+altura = float(input("Digite a sua altura: "))
+imc = peso / (altura * altura)
+
+print(f"Seu IMC é {imc}")
+
+
+Exercício 4
+
+def palindromo(palavra):
+  palavra = palavra.upper()
+  left = 0
+  right = len(palavra) - 1
+  
+  while left < right:
+    if palavra[left] != palavra[right]:
+       return False
+    left += 1
+    right -= 1
+  return True
+
+frase = input("Digite uma palavra para verificar se é um polídromo:  ")
+
+if palindromo(frase):
+    print(f"É um palíndromo: {frase} .")
+else:
+    print(f"Não é um palíndromo: {frase} ")
+
+
+
+Exercício 5
+
+numero = int(input("Qual tabuada você quer saber?:  "))
+for i in range(0,11): 
+  multiplicacao = numero * i
+  print(f"A tabuada de: {numero} x {i} = {multiplicacao} ") 
+
+
+
+Exercício 6
+
+frase = input("Escreva uma frase para contar as vogais:  ")
+
+frase = frase.lower()
+vogais = "aeiou"
+contador = 0
+
+for x in frase:
+  if x in vogais:
+    contador += 1
+
+print(f"A frase contém {contador} vogais ")
+
+
+
+Exercício 7
+
+notas = []
+
+while (True):
+  notas2 = float(input("Insira a nota ou digite (-1) para sair:  "))
+  if notas2 == -1:
+    break
+  notas.append(notas2)
+
+media = sum(notas) / len(notas)
+
+print(f"A média das notas é: {media}")
+
+
+
+Exercício 8
+
+entrada = int(input("Digite o número da sequência Fibonacci: "))
+
+if entrada <= 0:
+    print("Por favor, insira um número inteiro positivo.")
+else:
+    a, b = 0, 1
+    fib = []
+
+    for _ in range(entrada):
+      fib.append(a)
+      a,b = b, a + b
+
+print(f"Sequência Fibonacci: {fib}") 
+
+
+
+Exercício 9
+
+numero1 = int(input("digite o 1° número: "))
+numero2 = int(input("digite o 2° número: "))
+numero3 = int(input("digite o 3° número: "))
+
+list = [numero1, numero2, numero3]
+list.sort()
+
+print(f"Número em ordem crescente: {list}")
+
+
+
+
+Exercício 10
+
+numero = int(input("Digite um número que seja inteiro: "))
+
+if numero % 2 == 0:
+    print(f"O número {numero} é par.")
+else:
+    print(f"O número {numero} é ímpar.")
+
+
+
+
+Exercício 11
+
+raio = float(input("Digite o raio do círculo: "))
+
+area = 3.14 * raio ** 2
+
+print(f"A área do círculo com raio {raio} é: {area}")
+
+
+
+
+Exercício 12
+
+print(f"Bem-vindo ao Jogo do Número Secreto \n Escollha um Número de 0 a 100")
+numero_secreto = 55
+tentativas = 0
+    
+while True:
+        chute = int(input("Digite um número: "))
+        tentativas += 1
+
+        if chute < numero_secreto:
+            print("Você errou, muito baixo! Tente novamente.")
+        elif chute > numero_secreto:
+            print("Muito alto! Está quase lá.")
+        else:
+            print(f"Parabéns! Você acertou o número é {numero_secreto}. \n Você acertou depois de {tentativas} tentativas.")
+            break
+
+
+
+Exercício 13
+
+soma_pares = 0
+
+for numero in range(1, 101):
+  if numero % 2 == 0:
+    soma_pares += numero
+
+print(f"A soma de todos os números pares entre 1 e 100 é: {soma_pares}")
+
+
+
+Exercício 14
+
+numero1 = float(input("Digite o primeiro número: "))
+numero2 = float(input("Digite o segundo número: "))
+operacao = input(f"Digite a operação desejada \n (+) (-) (*) (/): ")
+
+# Realiza a operação e imprime o resultado
+if operacao == '+':
+    print(f"O resultado da soma é: {numero1 + numero2}")
+elif operacao == '-':
+    print(f"O resultado da subtração é: {numero1 - numero2}")
+elif operacao == '*':
+    print(f"O resultado da multiplicação é: {numero1 * numero2}")
+elif operacao == '/':
+    if numero2 != 0:
+        print(f"O resultado da divisão é: {numero1 / numero2}")
+    else:
+        print("Erro: Divisão por zero não é permitida.")
+else:
+    print("Operação inválida. Por favor, escolha entre (+) (-) (*) (/).")
+
+
+
+
+Exercício 15
+
+numero = int(input("Digite um número n: "))
+
+soma = numero * (numero + 1) // 2
+
+print(f"A soma dos primeiros {numero} números naturais é: {soma}")
+
+
+
+Exercício 16
+
+texto = input("Digite uma palavra: ")
+
+texto_invertido = ""
+
+for caractere in texto:
+    texto_invertido = caractere + texto_invertido
+
+print(f"A palavra invertida é: {texto_invertido}")
+
+
+
+Exercício 17
+
+numero = int(input("Digite um número: "))
+
+if numero <= 0:
+    print("Número inválido. Por favor, digite um número positivo.")
+else:
+    soma_divisores = 0
+
+    for i in range(1, numero):
+     if numero % i == 0:
+        soma_divisores += i
+
+    if soma_divisores == numero:
+        print(f"{numero} é um número perfeito.")
+    else:
+        print(f"{numero} não é um número perfeito.")
+
+
+
+
+Exercício 18
+
+numero_palavras = len(input("Escreva uma frase: ").split())
+
+print(f"A frase contém {numero_palavras} palavras.")
+
+
+
+Exercício 19
+
+nota1 = float(input("Digite a primeira nota: "))
+nota2 = float(input("Digite a segunda nota: "))
+nota3 = float(input("Digite a terceira nota: "))
+
+media_ponderada = (nota1 * 2 + nota2 * 3 + nota3 * 5) / (2 + 3 + 5)
+
+print(f"Média ponderada: {media_ponderada}")
+
+
+
+Exercício 20
+
+numeros = []
+entrada = input("Digite um número (ou 'sair' para terminar): ")
+
+while entrada.lower() != 'sair':
+    try:
+        numeros.append(float(entrada))
+    except ValueError:
+        print("Entrada inválida. Digite um número.")
+    entrada = input("Digite um número (ou 'sair' para terminar): ")
+
+if numeros:
+    print(f"O maior número é: {max(numeros)}")
+    print(f"O menor número é: {min(numeros)}")
+    print(f"A média dos números é: {sum(numeros) / len(numeros)}")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
